@@ -1,0 +1,11 @@
+{
+    "requires": ["bare-metal", "events"],
+    "target_overrides": {
+        "*": {
+            "target.c_lib": "small",
+            "target.printf_lib": "minimal-printf",
+            "platform.stdio-baud-rate": 115200,
+            "platform.stdio-buffered-serial": 1
+        }
+    }
+}
